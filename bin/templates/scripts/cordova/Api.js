@@ -348,7 +348,6 @@ Api.prototype.addPodSpecs = function (plugin, podSpecs, frameworkPods) {
     var project_dir = self.locations.root;
     var project_name = self.locations.xcodeCordovaProj.split('/').pop();
     var minDeploymentTarget = new ConfigParser(self.locations.root.replace('platforms/ios', 'config.xml')).getPreference('deployment-target', 'ios');
-    console.log('minDeploymentTarget', minDeploymentTarget);
 
     var Podfile = require('./lib/Podfile').Podfile;
     var PodsJson = require('./lib/PodsJson').PodsJson;
